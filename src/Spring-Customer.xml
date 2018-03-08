@@ -3,6 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	<!-- 默认模式，通过 'ref' 属性来连接 bean。 -->
 	<bean id="customerDao" class="com.jl.spring.Dao.JdbcCustomerDao">
 		<property name="dataSource" ref="dataSource"></property>
 	</bean>
